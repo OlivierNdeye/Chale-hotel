@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -10,10 +9,14 @@ body {
     margin: 15px;
 }
 
+img {
+    height: 90px;
+}
+
 #container {
     margin: 0 auto;
     font-family: 'Trebuchet MS', sans-serif;
-    background: #ede9cc;
+    background: #ede9cc url(../imagens/bg-container.png) top center repeat-y;
     min-width: 740px;
     max-width: 1180px;
 }
@@ -117,4 +120,78 @@ ul#navegacao a:hover {
     width: 226px;
     height: 164px;
     float: right;
+}
+
+/********************************Área de Conteúdo**************************************/
+
+#area-principal {
+    float: left;
+    width: 50%;
+    background: url(../imagens/bg-area-principal.png) top left repeat-x;
+    padding: 15px 0px;
+}
+
+#area-lateral {
+
+    float: right;
+    width: 50%;
+    background: url(../imagens/bg-area-lateral.png) top left repeat-x;
+    padding: 20px 0px;
+}
+
+
+.conteudo {
+    margin: 0 auto;
+    width: 90%;
+}
+
+#rodape {
+    clear: both;
+    padding: 16px;
+    background: #fff url(../imagens/bg-rodape.png) repeat-x top;
+    color: #7d7640;
+}
+
+/************************Formatações de Texto****************************/
+
+h2 {
+    color: #7d7640;
+    font-size: 1.1em;
+    padding: 5px 0px;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 10px;  
+}
+
+/**********************Formatações da Area Lateral****************************/
+
+#beneficios li {
+    padding: 8px;
+    border-bottom: 1px solid #f3efcb;
+    height: 6em;
+}
+
+#beneficios li a img {
+    float: left;
+    padding: 0.5em auto;
+    margin-right: 8px;
+}
+
+#beneficios li a p{
+    font-size: 0.8em;
+}
+
+#beneficios li a h3 {
+    font-size: 1em;
+    color: #615b2d;
+    padding: 5px 0;
+    background: url(../imagens/ornamento.png) no-repeat center right;
+
+}
+
+#beneficios li:hover {
+    background: #f3efcb;
+    color: #615b2d;
 }
